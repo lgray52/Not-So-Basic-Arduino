@@ -3,6 +3,7 @@
 ### Table of Contents
 * [HelloFunctions](#HelloFunctions)
 * [LEDBlinkRevisited](#LEDBlinkRevisited)
+* [FiniteLEDBlinker](#FiniteLEDBlinker)
 
 ## HelloFunctions
 
@@ -32,3 +33,18 @@ The idea of this assignment was to make a led blink, just a little bit more comp
 
 ### Reflection
 This was an interesting assignment. After looking up (and figuring out) the "analogWrite" function, this project was pretty much all downhill, until it came to the wave in the Serial monitor challenge. I tried different combinations of using "analogRead" and trying to do it based on the brightness, but I couldn't get it to work. Mr. Dierolf helped out with this in class - this is where the "for" loop comes in. A "for" loop runs something repeatedly, based on it's instructions, which were determined by math in the case of this project. It seems honestly very useful. 
+
+## FiniteLEDBlinker
+
+### Description
+The goal of this assignment is to use "if" statements to make an LED blink a finite number of times - I chose 5.
+
+### Images
+<img src="images/blink_wiring.png" alt="wiring diagram" height="300">
+(same as LED Blink Revisited)
+
+### Code
+[Link](https://create.arduino.cc/editor/lgray52/a6d3387a-8f2a-4b57-b37a-55ecb6fbe67d/preview)
+
+### Reflection
+This assignment was quite easy, having used Arduino last year. The idea is simply to blink a light 5 times and have it turn off. Pretty self-explanatory, just using an if statement and printing the counter to the serial monitor pretty much got the job done.
