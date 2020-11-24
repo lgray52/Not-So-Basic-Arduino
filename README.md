@@ -53,7 +53,7 @@ This assignment was quite easy, having used Arduino last year. The idea is simpl
 ## NewPing
 
 ### Description
-This used the NewPing library to control an ultrasonic sensor. By including the NewPing library, NewPing.h, in the code, it is easier to use an ultrasonic sensor, since the code of the library provides for it.
+This used the NewPing library to control an ultrasonic sensor. By including the NewPing library, NewPing.h, in the code, it is easier to use an ultrasonic sensor, since the code of the library provides for it. For mine, I used the NewPing library to blink a different led depending on the distance from the sensor.
 
 ### Wiring Diagram
 <img src="images/newping_wiring.png" alt="wiring diagram for NewPing" height="300">
