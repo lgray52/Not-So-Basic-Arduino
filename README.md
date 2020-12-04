@@ -5,6 +5,7 @@
 * [LEDBlinkRevisited](#LEDBlinkRevisited)
 * [FiniteLEDBlinker](#FiniteLEDBlinker)
 * [NewPing](#NewPing)
+* [Photoresistor](#Photoresistor)
 
 ## HelloFunctions
 
@@ -62,4 +63,19 @@ This used the NewPing library to control an ultrasonic sensor. By including the 
 [Link to code](https://create.arduino.cc/editor/lgray52/02b2e54c-c4b4-401f-a0b3-dcaa2544bffb/preview)
 
 ### Reflection
-This assignment was good. I'm not sure if it's because we're doing this online, but some parts of the NewPing library commands simply wouldn't work, so i incorporated some of the code which I used in HelloFunctions to fill in the gaps. Other than that, there weren't any major difficulties I ran into. This is definitely a simpler way to use the ultrasonic sensors, so that should be useful.
+This assignment was good. I'm not sure if it's because we're doing this online, but some parts of the NewPing library commands simply wouldn't work, so I incorporated some of the code which I used in HelloFunctions to fill in the gaps. Other than that, there weren't any major difficulties I ran into. This is definitely a simpler way to use the ultrasonic sensors, so that should be useful.
+
+
+## Photoresistor
+
+### Description
+This assignment used a photoresistor to turn on a light when it is dark. By analogRead-ing the value given by the photoresistor, you can find the values that indicate light vs dark and use if statements to decide whether the light is on or off.
+
+### Wiring Diagram
+<img src="images/photoresistor_wiring.png" alt="wiring diagram for Photoresistor" height="300">
+
+### Code
+[Link to Code](https://create.arduino.cc/editor/lgray52/a400d244-7fa0-46b0-9db1-2c83fc81613a/preview)
+
+### Reflection
+This assignment was pretty good. The photoresistor was a little weird at first, because it kept spitting out different values for dark and light, and the fading part was a little bit tricky to figure out, but once I had that sorted, it was only a matter of adjusting the necessary values. When trying to get the light to fade out, I couldn't figure out a way to get it to fade in and not out as the light level decreased, but I realised that I had to subtract the value given by the photoresistor (photoVal in my code) from the highest brightness level. When I did this, I noticed it still wasn't really working, so I went back to look at the wiring and realised it called for a 10k resistor, and the only ones I have in my toolkit are 220s. So, I decreased the levels from 1023 and 255 down to 100 and 25 to make up for it. 
